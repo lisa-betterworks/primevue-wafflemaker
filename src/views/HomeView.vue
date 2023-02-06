@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h1>Welcome</h1>
+    <span class="p-float-label">
+      <InputText id="txt" type="text" v-model="value" />
+      <label for="username">Username</label>
+    </span>
+    <Button label="Greet" @click="greet" icon="pi pi-user"></Button>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+<script setup>
+import { ref } from "vue";
+import { useToast } from "primevue/toast";
 
-export default {
-  name: "HomeView",
-  components: {
-    HelloWorld,
-  },
+const text = ref();
+const toast = useToast();
+const greet = () => {
+  toast.add({ severity: "success", summary: "Alert", detail: text.value });
 };
 </script>
+
+<style scoped>
+.home {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; */
+}
+</style>
