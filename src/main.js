@@ -11,9 +11,8 @@ import ColumnGroup from "primevue/columngroup";
 import Row from "primevue/row";
 import ButtonItem from "primevue/button";
 
-import "primevue/resources/themes/saga-blue/theme.css";
 import "primeicons/primeicons.css";
-import "primevue/resources/themes/mdc-light-indigo/theme.css";
+import "primevue/resources/themes/tailwind-light/theme.css";
 
 const app = createApp(App);
 

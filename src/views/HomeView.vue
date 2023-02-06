@@ -1,9 +1,12 @@
 <template>
-  <div class="home">
-    <h1>Welcome</h1>
-    <span class="p-float-label">
-      <InputText id="txt" type="text" v-model="value" />
-    </span>
+  <div>
+    <h1 class="home">Welcome</h1>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      temporibus voluptas earum quia doloribus aliquam laborum quos, optio
+      maiores aperiam repellat eius porro ipsum, tenetur animi, repellendus a
+      accusantium beatae?
+    </p>
     <ButtonItem label="Greet" @click="greet" icon="pi pi-user"
       >Submit</ButtonItem
     >
@@ -14,5 +17,6 @@
 
 <style scoped>
 .home {
+  color: var(--indigo-500);
 }
 </style>
