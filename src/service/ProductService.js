@@ -1,8 +1,6 @@
-import productsSmall from "./data/product-small.json";
-
 export default class ProductService {
   getProductsSmall() {
-    return fetch(productsSmall)
+    return fetch("./data/product-small.json")
       .then((res) => res.json())
       .then((d) => d.data);
   }
