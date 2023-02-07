@@ -1,6 +1,7 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
+    <router-link to="/">Home</router-link>
+    <!-- <router-link to="/search">Search</router-link> -->
     <router-link to="/table">Table</router-link>
   </nav>
   <router-view />
@@ -22,6 +23,8 @@ nav {
 nav a {
   font-weight: bold;
   color: var(--indigo-300);
+  padding-right: 10px;
+  text-transform: uppercase;
 }
 
 nav a.router-link-exact-active {

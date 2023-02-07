@@ -1,5 +1,5 @@
 <template>
-  <div class="data-table">
+  <div>
     <DataTable :value="products" responsiveLayout="scroll">
       <ColumnView field="code" header="Code"></ColumnView>
       <ColumnView field="name" header="Name"></ColumnView>
